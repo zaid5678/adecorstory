@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact A Decor Story — get in touch to discuss your Nikkah or wedding decoration. Based in London, serving the surrounding areas.">
+  <meta property="og:title" content="Contact — A Decor Story">
+  <meta property="og:description" content="Get in touch with A Decor Story to begin your wedding decoration enquiry.">
+  <meta property="og:image" content="assets/logo.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact — A Decor Story">
+  <meta name="twitter:description" content="Get in touch with A Decor Story to begin your wedding decoration enquiry.">
+  <meta name="twitter:image" content="assets/logo.jpg">
+  <title>Contact — A Decor Story</title>
+  <link rel="icon" href="assets/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ─── Header ─────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo" aria-label="A Decor Story — Home">
+        <img src="assets/logo.jpg" alt="A Decor Story logo">
+        <span class="header-logo-text">A Decor Story</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-panel">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" aria-hidden="true"></div>
+  <nav class="nav-panel" id="nav-panel" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- ─── Page Hero ─────────────────────────────────── -->
+    <div class="page-hero">
+      <div class="container" style="text-align:center;">
+        <span class="label">Get in Touch</span>
+        <h1 class="font-display reveal">Contact Us</h1>
+        <div class="gold-rule reveal"></div>
+      </div>
+    </div>
+
+    <!-- ─── Contact Grid ───────────────────────────────── -->
+    <section>
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Form -->
+          <div class="contact-form-wrap reveal">
+            <h2 class="font-display">Tell Us About Your Day</h2>
+            <form
+              name="contact"
+              method="POST"
+              action="thanks.html"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              novalidate
+            >
+              <input type="hidden" name="form-name" value="contact">
+              <p style="display:none;">
+                <label>Don't fill this in if you're human: <input name="bot-field"></label>
+              </p>
+
+              <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Your full name" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+44 7xxx xxxxxx" autocomplete="tel">
+              </div>
+
+              <div class="form-group">
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" name="event-date">
+              </div>
+
+              <div class="form-group">
+                <label for="event-type">Event Type</label>
+                <select id="event-type" name="event-type" required>
+                  <option value="" disabled selected>Please select&hellip;</option>
+                  <option value="Nikkah">Nikkah</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Engagement">Engagement</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Services Interested In</label>
+                <div class="checkbox-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="Wedding & Nikkah Stages">
+                    Wedding &amp; Nikkah Stages
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="Welcome Signs">
+                    Welcome Signs
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="Guestbook Tables">
+                    Guestbook Tables
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services" value="Table Decoration">
+                    Table Decoration
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Tell us a little about your vision, venue, and any questions you have…" required></textarea>
+              </div>
+
+              <button type="submit" class="btn">Send Enquiry</button>
+            </form>
+          </div>
+
+          <!-- Info -->
+          <aside class="contact-info reveal reveal-delay-2">
+            <span class="label">Get in Touch</span>
+            <h3 class="font-display">We'd Love to Hear From You</h3>
+            <p>
+              We are always happy to hear from couples who are beginning to plan their special day. Whether you have a clear vision or are still gathering ideas, reach out — we'll guide you through the rest.
+            </p>
+            <p>
+              We proudly serve London and the surrounding areas. If you are unsure whether we cover your venue, do get in touch and we will do our very best to accommodate you.
+            </p>
+
+            <div class="contact-divider"></div>
+
+            <a href="mailto:hello@adecorstory.co.uk" class="contact-detail" aria-label="Email us at hello@adecorstory.co.uk">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m2 7 10 7 10-7"/>
+              </svg>
+              hello@adecorstory.co.uk
+            </a>
+
+            <a href="https://www.instagram.com/a.decor.story" class="contact-detail" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+              @a.decor.story on Instagram
+            </a>
+
+            <a href="https://www.tiktok.com/@a.decor.story" class="contact-detail" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+              </svg>
+              @a.decor.story on TikTok
+            </a>
+
+            <div class="contact-divider"></div>
+
+            <p style="font-size:0.82rem; color:var(--text-muted); line-height:1.8;">
+              We aim to respond to all enquiries within 48 hours. For urgent queries, you are welcome to reach out directly via Instagram DM.
+            </p>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.jpg" alt="A Decor Story logo">
+          <h3 class="font-display">A Decor Story</h3>
+          <p class="tagline">Created with Love</p>
+          <p>Bespoke Nikkah and wedding decoration, crafted with care in London.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <a href="https://www.instagram.com/a.decor.story" class="social-row" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+            @a.decor.story
+          </a>
+          <a href="https://www.tiktok.com/@a.decor.story" class="social-row" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+            </svg>
+            @a.decor.story
+          </a>
+          <a href="mailto:hello@adecorstory.co.uk" class="email-row" aria-label="Email us">
+            hello@adecorstory.co.uk
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span class="footer-year"></span> A Decor Story · Created with Love in London</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
