@@ -16,7 +16,7 @@
 
 /* ─── Reset ────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 16px; scroll-behavior: smooth; }
+html { font-size: 19px; scroll-behavior: smooth; }
 
 body {
   background: var(--bg);
@@ -44,7 +44,7 @@ h1, h2, h3, h4 {
 
 .label {
   font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 400;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -97,7 +97,7 @@ section {
   border: 1px solid var(--gold);
   color: var(--gold);
   font-family: 'Cinzel', serif;
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 400;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -167,7 +167,7 @@ section {
 }
 .site-nav a {
   font-family: 'Cinzel', serif;
-  font-size: 0.62rem;
+  font-size: 0.7rem;
   font-weight: 400;
   letter-spacing: 0.14em;
   text-transform: uppercase;
