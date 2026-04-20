@@ -57,6 +57,9 @@
 
   overlay && overlay.addEventListener('click', close);
 
+  const closeBtn = panel.querySelector('.nav-panel-close');
+  closeBtn && closeBtn.addEventListener('click', close);
+
   panel.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
 
   document.addEventListener('keydown', e => {

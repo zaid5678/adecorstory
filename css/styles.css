@@ -265,6 +265,25 @@ section {
 .nav-panel a:hover, .nav-panel a.active { color: var(--gold); }
 .nav-panel a:last-of-type { border-bottom: none; }
 
+.nav-panel-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: 1px solid var(--hairline-solid);
+  color: var(--gold);
+  font-size: 1.4rem;
+  line-height: 1;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+.nav-panel-close:hover { background: var(--gold); color: var(--bg); }
+
 .nav-overlay {
   position: fixed;
   inset: 0;
