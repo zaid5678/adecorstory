@@ -190,16 +190,20 @@ section {
 .site-nav a:hover::after,
 .site-nav a.active::after { width: 100%; }
 .site-nav a.active { color: var(--gold); }
-.site-nav a.nav-cta {
-  background: var(--gold);
-  color: var(--bg);
-  padding: 0.45rem 1.1rem;
-  padding-bottom: 0.45rem;
-  letter-spacing: 0.14em;
-  transition: background var(--transition), color var(--transition);
+.site-header .site-nav a.nav-cta,
+.site-header .site-nav a.nav-cta.active {
+  background: var(--gold) !important;
+  color: var(--bg) !important;
+  padding: 0.45rem 1.2rem !important;
+  border: none;
+  position: relative;
 }
-.site-nav a.nav-cta::after { display: none; }
-.site-nav a.nav-cta:hover { background: var(--gold-bright); color: var(--bg); }
+.site-header .site-nav a.nav-cta::after { display: none !important; }
+.site-header .site-nav a.nav-cta:hover,
+.site-header .site-nav a.nav-cta.active:hover {
+  background: var(--gold-bright) !important;
+  color: var(--bg) !important;
+}
 
 /* nav-cta in footer and mobile panel — keep plain */
 .footer-links a.nav-cta,
