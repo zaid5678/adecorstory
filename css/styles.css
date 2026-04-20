@@ -190,6 +190,27 @@ section {
 .site-nav a:hover::after,
 .site-nav a.active::after { width: 100%; }
 .site-nav a.active { color: var(--gold); }
+.site-nav a.nav-cta {
+  background: var(--gold);
+  color: var(--bg);
+  padding: 0.45rem 1.1rem;
+  padding-bottom: 0.45rem;
+  letter-spacing: 0.14em;
+  transition: background var(--transition), color var(--transition);
+}
+.site-nav a.nav-cta::after { display: none; }
+.site-nav a.nav-cta:hover { background: var(--gold-bright); color: var(--bg); }
+
+/* nav-cta in footer and mobile panel — keep plain */
+.footer-links a.nav-cta,
+.nav-panel a.nav-cta {
+  background: none;
+  color: var(--text-muted);
+  padding: 0;
+  padding-bottom: 0;
+}
+.footer-links a.nav-cta:hover { color: var(--text); }
+.nav-panel a.nav-cta:hover { color: var(--gold); }
 
 /* ─── Hamburger ────────────────────────────────────────────────── */
 .hamburger {
